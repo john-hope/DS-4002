@@ -11,10 +11,10 @@ nltk.download('vader_lexicon')
 import time
 
 # Twitter api keys and tokens
-consumerKey = 'P9bq3w1fhEIZ5897xkVV10dNb'
-consumerSecret = 'AmeVlMT7kBZoZ2C92AEakr31yzbQ3DDas9JWGuDTaLmAPNSHmx'
-accessToken = '1445460001758204019-2THQ2etYDk8zR0db72Xy705dLEEIrs'
-accessTokenSecret = 'FmIFBK9okCQOKENXSIaXtYaLfmKfIFyNUw7CDefOsts2Y'
+consumerKey = ''
+consumerSecret = ''
+accessToken = ''
+accessTokenSecret = ''
 
 #AAAAAAAAAAAAAAAAAAAAAFvYUQEAAAAAUFQBVhyc%2BOOxfwe8VU9IVfFaPeY%3DQREm6hLIBXwPe0IMNuwBYd62ELu9tU28cKbHET8HviGSGmcaPx
 auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
