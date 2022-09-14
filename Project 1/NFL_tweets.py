@@ -100,9 +100,6 @@ tweet_df = pd.DataFrame({'text':tweet_list,
                          'neutral':neutral_list})
 
 
-# Removing the RT and url components to detect duplicate tweets
-remove_rt = lambda x: re.sub('RT @\w+: ',"",x)
-remove_url = lambda x: re.sub(r' http\S+', '', x)
-tweet_df['text'] = tweet_df.text.map(remove_rt).map(remove_url)
-tweet_df['text'] = tweet_df.text.str.lower()
-tweet_df.drop_duplicates(inplace = True)
+# Removing the tweets that are retweets
+tweet_df = tweet_df[tweet_df['text'].str.contains("RT @\w+: ")==False]
+
