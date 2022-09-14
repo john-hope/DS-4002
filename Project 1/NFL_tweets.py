@@ -16,7 +16,6 @@ consumerSecret = ''
 accessToken = ''
 accessTokenSecret = ''
 
-#AAAAAAAAAAAAAAAAAAAAAFvYUQEAAAAAUFQBVhyc%2BOOxfwe8VU9IVfFaPeY%3DQREm6hLIBXwPe0IMNuwBYd62ELu9tU28cKbHET8HviGSGmcaPx
 auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
 auth.set_access_token(accessToken, accessTokenSecret)
 api = tweepy.API(auth)
